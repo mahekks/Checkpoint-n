@@ -52,16 +52,21 @@
       </style>
 <body>
   
-<div class="login">
-  <h1>LOGIN</h1>
- </div>
+<div class="login"> 
+<h1>LOGIN</h1>
+</div>
+
  <form action="/action_page.php">
   <label for="fname">Username:</label><br>
   <input type="text" id="fname" name="fname" value="Enter Username" ><br>
   <label for="lname">Password:</label><br>
   <input type="text" id="lname" name="lname" value="Enter Password"><br><br>
-  <p><a href="index.html">Submit</a></p>
-
+  <p> <button onclick="myFunction()"><a href="index.html">Submit</a></button></p>
+  <script>
+    function myFunction() {
+      alert("Successfully LogedIn!");
+    }
+    </script>
 </form> 
 
 </body>
